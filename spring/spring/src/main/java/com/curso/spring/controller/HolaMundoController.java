@@ -1,6 +1,7 @@
 package com.curso.spring.controller;
 
 import com.curso.spring.dto.Persona;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,4 +32,10 @@ public class HolaMundoController {
         return null;
 
     }
+@GetMapping("/posts/{id}")
+    @Operation(summary = "Operacion para consumir un servicio REST")
+    public void getPost(@PathVariableint id)
+
 }
+
+
